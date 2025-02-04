@@ -1,3 +1,10 @@
+/* 
+Object for Neural network. This will be used for each player during runtime. 
+Once every couple of iterations (or by button press) the brains will be stored in a file to be read later.
+*/
+
+
+
 // Input variables, data from Movement.js
 let VelX = 0.0;
 let VelY = 0.0;

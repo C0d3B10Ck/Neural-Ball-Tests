@@ -7,6 +7,7 @@ NuralData.InputNodes = '';
 NuralData.FirstLayer = '';
 NuralData.SecondLayer = '';
 NuralData.Result = '';
+// git test
 
 // Input variables, data from Movement.js
 let VelX = 0.0;

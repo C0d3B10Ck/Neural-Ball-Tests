@@ -7,7 +7,34 @@ NuralData.InputNodes = '';
 NuralData.FirstLayer = '';
 NuralData.SecondLayer = '';
 NuralData.Result = '';
-// git test
+
+const NodeData = {}
+NodeData.Connections = [];        //array Of Int
+NodeData.Bias = [];               //array Of Foat paralell to Connections Array
+NodeData.ConnectionStrength = []; //array Of Foat paralell to Connections Array
+NodeData.Strength = 0;            //Normalised Int
+
+//Initialise values from user input on WebPage. 
+let FirstLayerCount = 6;              //int count of nodes in first layer
+let SecondLayerCount = 0;              //int count of nodes in second layer
+
+
+//creating dynamic node objects
+let CreateNodeObjects = () => {
+
+  for (let i = 0; i > FirstLayerCount; i++) { 
+    //window["Node"+i] = new NodeData();
+    if (InitialiseNodes) {
+      let NodeString = ''; //input user input 
+    } else {
+      let FiveRandomNumbers = `0.${Math.random * 10},0.${Math.random * 10},0.${Math.random * 10},
+        0.${Math.random * 10},0.${Math.random * 10}`
+      let NodeString = ['0,1,2,3,4', FiveRandomNumbers, FiveRandomNumbers, `0.5`]
+    }
+  }
+}
+
+
 
 // Input variables, data from Movement.js
 let VelX = 0.0;
